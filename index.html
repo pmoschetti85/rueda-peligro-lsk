@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Rueda de Peligros - LSK TECH SAS</title>
+
+  <link
+    rel="stylesheet"
+    href="./style.css"
+  >
+</head>
+
+<body>
+
+  <header class="encabezado">
+
+    <div class="encabezado-contenido">
+
+      <div class="logo-box">
+
+        <img
+          src="./logo lsk.png"
+          alt="Logo LSK"
+          class="logo-empresa"
+        >
+
+      </div>
+
+      <div class="titulo-box">
+
+        <h1>Rueda de Peligros</h1>
+
+        <p class="subtitulo">
+          Herramienta interactiva para identificación de peligros
+        </p>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <main class="main-contenido">
+
+    <p class="instruccion-principal">
+      Seleccioná una categoría:
+    </p>
+
+    <div class="contenedor-principal">
+
+      <div class="columna-rueda">
+
+        <div class="rueda-container">
+
+          <svg
+            id="rueda"
+            viewBox="0 0 500 500"
+          ></svg>
+
+        </div>
+
+        <div class="acciones-rueda">
+
+          <button
+            id="btn-restablecer"
+            type="button"
+          >
+            Restablecer rueda
+          </button>
+
+          <button
+            id="btn-imprimir"
+            type="button"
+          >
+            Imprimir / exportar selección
+          </button>
+
+        </div>
+
+      </div>
+
+
+      <div id="informacion">
+
+        <h2 id="titulo">
+          Seleccioná una categoría
+        </h2>
+
+        <section class="bloque-info">
+          <h3>Qué es</h3>
+
+          <p id="descripcion">
+            Hacé clic en un sector de la rueda para ver la información.
+          </p>
+        </section>
+
+        <section class="bloque-info">
+          <h3>Ejemplos / peligros asociados</h3>
+
+          <p id="peligros">
+            Aquí aparecerán los peligros asociados.
+          </p>
+        </section>
+
+        <section class="bloque-info">
+          <h3>Controles preventivos</h3>
+
+          <p id="controles">
+            Aquí aparecerán los controles preventivos.
+          </p>
+        </section>
+
+        <button
+          id="btn-ejemplos"
+          type="button"
+        >
+          Ver ejemplos de campo
+        </button>
+
+        <div
+          id="ejemplos-extra"
+          class="oculto"
+        >
+          <ul id="lista-ejemplos"></ul>
+        </div>
+
+        <button
+          id="btn-preguntas"
+          type="button"
+        >
+          Ver preguntas para identificar el peligro
+        </button>
+
+        <div
+          id="preguntas-extra"
+          class="oculto"
+        >
+          <ul id="lista-preguntas"></ul>
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+
+  <footer class="pie-pagina">
+    <p>® LSK TECH SAS 2026</p>
+  </footer>
+
+
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
